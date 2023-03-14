@@ -1,0 +1,55 @@
+section.navigation {
+    float: left;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+}
+.header_bg {
+    background: transparent;
+    float: left;
+    width: 100%;
+    padding: 24px 0px;
+}
+
+.header_icon {
+    float: left;
+    width: 7.3%;
+}
+.header_icon img{
+    float: left;
+    width: 100%;
+    padding: 0px 12px;
+}
+.header_pages {
+    padding: 23px 0px;
+    float: right;
+    width: 60%;
+}
+.header_pages li, a {
+    font-weight: 500;
+    font-size: 16px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    list-style-type: none;
+    padding: 0px 16px 0px 10px;
+    font-family: Montserrat!important;
+}
+.header_pages li:hover , a:hover{
+    color: #febe0f;
+}
+.header_pages span {
+    cursor: pointer;
+    margin: -8px 0px 0px 10px;
+    font-size: 30px;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.navbar {
+    background-color: #ffffff00;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+.navbar.scrolled {
+    background-color: #000;
+}

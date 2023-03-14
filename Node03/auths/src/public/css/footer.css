@@ -1,0 +1,125 @@
+
+section.footer {
+    float: left;
+    width: 100%;
+}
+.footer_outer {
+    float: left;
+    width: 100%;
+    margin: 80px 0px;
+}
+.footer_container {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+.Xavor_orporation {
+    float: left;
+    width: 20%;
+}
+.Xavor_orporation img{
+    width: 85px;
+}
+.Xavor_orporation p {
+    color: #5F5F5F;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 17px 0px;
+}
+.Xavor_orporation a {
+    float: left;
+    color: #050505;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.Xavor_orporation a:hover {
+    color: #FEBE0F;
+}
+
+p.x {
+    float: left;
+    margin: 2px 20px 0px 10px !important;
+    color: #000;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+.Xavor_mid {
+    float: left;
+    width: 60%;
+}
+.Xavor_inner {
+    float: left;
+    width: 30%;
+    padding: 13px;
+}
+.Xavor_inner h1 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.Xavor_inner p {
+    color: #5F5F5F;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 17px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Xavor_form {
+    float: left;
+    width: 20%;
+}
+.Xavor_form h1 {
+    color: #FEBE0F;
+    font-weight: 700;
+    font-size: 19px;
+}
+.Xavor_form p {
+    color: #5F5F5F;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 17px 0px;
+}
+.Xavor_form input {
+    outline: none;
+    background: #e9e9e9;
+    border: 0;
+    padding-left: 12px;
+    border-radius: 6px;
+    height: 40px;
+    color: #979797;
+    font-size: 16px;
+    font-weight: 500;
+    width: 85%;
+    margin: 6px 0px;
+}
+.Xavor_form input[type=submit] {
+    background: #febe0f;
+    border-radius: 6px;
+    color: #000;
+    width: 120px;
+    cursor: pointer;
+}
+.Xavor_form input:focus {
+    outline: none;
+}
