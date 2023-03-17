@@ -199,19 +199,29 @@ app.post("/getTouch_form", async (req, res) => {
       },
     });
   
-    // setup email data with requirements
-    let mailOptions = {
-      // sender address
-      from: "kkmuhammadbilal2@gmail.com",
-      // list of receivers that is requested by submition
-      to: "kkmuhammadbilal2@gmail.com",
-      // Subject line
-      subject: "Web Subscription",
-      // plain text body
-      text: `First Name: ${req.body.fname}\nLast Name: ${req.body.lname}\nInterest: ${req.body.interest}\nBudget: ${req.body.budget}\nPhone: ${req.body.phone}\nSMS: ${req.body.sms}`,
-      // use can use html also
-      html: '<h1>FOR MORE<h1><br><a href="tel:+92305 769 2658" >Contact with Developer</a><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQisFXfjVw8WUmBPXoLmmZXnUm1jgRfXzuglHLEI0Jt3Q5bV8_lfxLFbyi-_W5J6xkTrjA&usqp=CAU" alt="">', // html body
-    };
+// setup email data with requirements
+let mailOptions = {
+  // sender address
+  from: "kkmuhammadbilal2@gmail.com",
+  // list of receivers that is requested by submition
+  to: "kkmuhammadbilal2@gmail.com",
+  // Subject line
+  subject: "client",
+  // use can use html also
+  html: `
+    <h1>Web Subscription</h1>
+    <p><strong>First Name:</strong> ${req.body.fname}</p>
+    <p><strong>Last Name:</strong> ${req.body.lname}</p>
+    <p><strong>Interest:</strong> ${req.body.interest}</p>
+    <p><strong>Budget:</strong> ${req.body.budget}</p>
+    <p><strong>Phone:</strong> ${req.body.phone}</p>
+    <p><strong>SMS:</strong> ${req.body.sms}</p>
+    <br>
+    <p>For more information, please contact the developer at <a href="tel:+92305 769 2658">+92305 769 2658</a></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQisFXfjVw8WUmBPXoLmmZXnUm1jgRfXzuglHLEI0Jt3Q5bV8_lfxLFbyi-_W5J6xkTrjA&usqp=CAU" alt="">
+  `
+};
+    
 
     // send mail with already defined transport object
     transporter.sendMail(mailOptions, (res, error, info) => {
@@ -220,7 +230,7 @@ app.post("/getTouch_form", async (req, res) => {
       } else {
         console.log("Message sent: %s", info.messageId);
       }
-      res.redirect("/contact");
+      res.redirect('/');
     });
   
 });
