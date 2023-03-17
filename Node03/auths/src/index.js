@@ -188,6 +188,46 @@ app.post("/getTouch_form", async (req, res) => {
   };
   await contactUs.insertMany([mailsMe]);
   console.log(`sumit succeed`);
+    //creating transpoter
+    let transporter = nodemailer.createTransport({
+      //selecting service "gmail"
+      service: "gmail",
+      //auther gmail and password who send the mails and password find from gmail-app password genrator
+      auth: {
+        user: "kkmuhammadbilal2@gmail.com",
+        pass: "epkqmckonglpvjua",
+      },
+    });
+  
+    // setup email data with requirements
+    let mailOptions = {
+      // sender address
+      from: req.body.subscription_mail,
+      // list of receivers that is requested by submition
+      to: "kkmuhammadbilal2@gmail.com",
+      // Subject line
+      subject: "Client Want Help",
+      // plain text body
+      Client_fname: req.body.fname,
+      Client_lname: req.body.lname,
+      Client_interest: req.body.interest,
+      Client_budget: req.body.budget,
+      Client_phone: req.body.phone,
+      Client_sms: req.body.sms,
+      // use can use html also
+      html: '<h1>FOR MORE<h1><br><a href="tel:+92305 769 2658" >Contact with Developer</a><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQisFXfjVw8WUmBPXoLmmZXnUm1jgRfXzuglHLEI0Jt3Q5bV8_lfxLFbyi-_W5J6xkTrjA&usqp=CAU" alt="">', // html body
+    };
+  
+    // send mail with already defined transport object
+    transporter.sendMail(mailOptions, (res, error, info) => {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log("Message sent: %s", info.messageId);
+        res.redirect("/contact");
+      }
+    });
+  
 });
 
 //create schema for form
