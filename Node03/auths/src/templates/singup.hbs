@@ -11,19 +11,21 @@
 
 <body class="obo">
     <div class="containerobo">
-        <h1 id="changer" >SING UP</h1>
+        <h1 id="changer">SING UP</h1>
         <form action="/singup" method="POST">
-            <input type="text" name="name" placeholder="name" id="name" autocomplete="off" class="inobo"/><br>
-            <input type="password" name="password" id="password" placeholder="password" autocomplete="off" class="inobo" /><br>
-            <input type="button" value="submit" id="authenticationSubmition" class="inobo" ><br>
+            <input type="text" name="name" placeholder="name" id="name" autocomplete="off" class="inobo" /><br>
+            <input type="password" name="password" id="password" placeholder="password" autocomplete="off"
+                class="inobo" /><br>
+            <input type="button" value="submit" id="authenticationSubmition" class="inobo"><br>
 
-            <input type="text" name="authentication" id="authentication" placeholder="code" autocomplete="off" class="inobo" /><br>
-            <input type="submit" value="Verify" id="Verify" class="inobo" ><br>
-            
+            <input type="text" name="authentication" id="authentication" placeholder="code" autocomplete="off"
+                class="inobo" /><br>
+            <input type="submit" value="Verify" id="Verify" class="inobo"><br>
+
         </form>
-            <a class="inobo" id="linklog" href="/singin">login➜</a>
+        <a class="inobo" id="linklog" href="/singin">login➜</a>
     </div>
-        <script>
+    <script>
         const authentication = document.getElementById('authentication');
         const Verify = document.getElementById('Verify');
 
@@ -33,16 +35,16 @@
         const linklog = document.getElementById('linklog');
         const authenticationSubmition = document.getElementById('authenticationSubmition');
         const authenticationResult = document.getElementById('authentication');
-        authenticationSubmition.addEventListener('click',()=>{
-            nameId.style.display="none";
-            passId.style.display="none";
-            authenticationSubmition.style.display="none";
-            linklog.style.display="none"
-            changerId.innerHTML="Verifiy . . . ";
+        authenticationSubmition.addEventListener('click', () => {
+            nameId.style.display = "none";
+            passId.style.display = "none";
+            authenticationSubmition.style.display = "none";
+            linklog.style.display = "none"
+            changerId.innerHTML = "Verifiy . . . ";
 
-            authentication.style.display="block";
-            Verify.style.display="block";
-            sessionStorage.setItem("approvel",Math.random(Math.random(Math.random(Math.random()))))
+            authentication.style.display = "block";
+            Verify.style.display = "block";
+            sessionStorage.setItem("approvel", Math.random(Math.random(Math.random(Math.random()))))
         })
     </script>
     <script>
