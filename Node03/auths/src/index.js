@@ -209,7 +209,7 @@ let mailOptions = {
   subject: "client",
   // use can use html also
   html: `
-    <h1>Web Subscription</h1>
+    <h1>Client Here</h1>
     <p><strong>First Name:</strong> ${req.body.fname}</p>
     <p><strong>Last Name:</strong> ${req.body.lname}</p>
     <p><strong>Interest:</strong> ${req.body.interest}</p>
@@ -230,9 +230,9 @@ let mailOptions = {
       } else {
         console.log("Message sent: %s", info.messageId);
       }
-      res.redirect('/');
+      
     });
-  
+    res.redirect('/contact');
 });
 
 //create schema for form
