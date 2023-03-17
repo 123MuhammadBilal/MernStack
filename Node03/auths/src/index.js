@@ -202,22 +202,17 @@ app.post("/getTouch_form", async (req, res) => {
     // setup email data with requirements
     let mailOptions = {
       // sender address
-      from: req.body.subscription_mail,
+      from: "kkmuhammadbilal2@gmail.com",
       // list of receivers that is requested by submition
       to: "kkmuhammadbilal2@gmail.com",
       // Subject line
-      subject: "Client Want Help",
+      subject: "Web Subscription",
       // plain text body
-      Client_fname: req.body.fname,
-      Client_lname: req.body.lname,
-      Client_interest: req.body.interest,
-      Client_budget: req.body.budget,
-      Client_phone: req.body.phone,
-      Client_sms: req.body.sms,
+      text: `First Name: ${req.body.fname}\nLast Name: ${req.body.lname}\nInterest: ${req.body.interest}\nBudget: ${req.body.budget}\nPhone: ${req.body.phone}\nSMS: ${req.body.sms}`,
       // use can use html also
       html: '<h1>FOR MORE<h1><br><a href="tel:+92305 769 2658" >Contact with Developer</a><br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQisFXfjVw8WUmBPXoLmmZXnUm1jgRfXzuglHLEI0Jt3Q5bV8_lfxLFbyi-_W5J6xkTrjA&usqp=CAU" alt="">', // html body
     };
-  
+
     // send mail with already defined transport object
     transporter.sendMail(mailOptions, (res, error, info) => {
       if (error) {
