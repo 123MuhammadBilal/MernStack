@@ -224,8 +224,8 @@ app.post("/getTouch_form", async (req, res) => {
         console.log(error);
       } else {
         console.log("Message sent: %s", info.messageId);
-        res.redirect("/contact");
       }
+      res.redirect("/contact");
     });
   
 });
