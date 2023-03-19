@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Uploaded Photo</title>
+</head>
+<body>
+  <h1>Uploaded Photo</h1>
+  {{#if photoId}}
+    <img src="/photo/{{photoId}}">
+  {{else}}
+    <p>No photo uploaded yet</p>
+  {{/if}}
+</body>
+</html>

@@ -878,3 +878,13 @@ input[type=button].inobo {
     float: left;
     width: 100%;
 }
+.subsBg {
+    margin-top: 55px;
+    background-color: #000;
+    margin: 3px 0px;
+    color: #fabc16;
+}
+.padSub{
+    padding: 10px;
+    font-size: 22px;
+}

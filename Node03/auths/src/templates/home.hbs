@@ -16,26 +16,7 @@
 
 <body>
 
-    <section class="navigation">
-        <header>
-            <div class="header_bg navbar">
-                <div class="header_icon">
-                    <a href="index.html"><img src="imgs/logo-white.png" alt="site_logo"></a>
-                </div>
-                <div class="header_pages">
-                    <ul>
-                        <li><a href="/"> Home</a><span>&rsaquo;</span>
-                        </li>
-                        <li><a href="/contact"> Contact</a><span>&rsaquo;</span></li>
-                        <li><a href="/about"> About</a><span>&rsaquo;</span></li>
-                        <li><a href="#"> Resources</a><span>&rsaquo;</span></li>
-                        <li><a href="tel: 949 264 1472"> 949 264 1472</a></li>
-                        <li><a href="/singin"> Logout </a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-    </section>
+    {{> header }}
     <section class="home_section">
         <div class="home_banner">
             <div class="banner_container">
@@ -621,85 +602,7 @@
             </div>
         </div>
     </section>
-    <section class="footer">
-        <footer>
-            <div class="footer_outer">
-                <div class="footer_container">
-                    <div class="Xavor_orporation">
-                        <img src="imgs/pnglogo-02.png" alt="">
-                        <p>Xavor Corporation is a leading technology company based in Irvine, California. We are
-                            committed to help our clients with reliable software solutions.</p>
-                        <a href="mailTo:Info@xavor.com">Info@xavor.com</a>
-                        <a href="tel:+1 949 264 1472">+1 949 264 1472</a>
-                        <p class="x">Irvine, California</p>
-                    </div>
-                    <div class="Xavor_mid">
-
-                        <div class="Xavor_inner">
-                            <h1>Services</h1>
-                            <p> PLM Solutions</p>
-                            <p> Web App Development</p>
-                            <p> Mobile App Development</p>
-                            <p> Integration Services</p>
-                            <p> BI and Data Analytics</p>
-                            <p> Cloud Services & DevOps</p>
-                            <p> Integration Services</p>
-                            <p> Microsoft 365 SharePoint</p>
-                            <p> UI/UX</p>
-                            <h1>Engagement models</h1>
-                            <p> Dedicated Teams & Resources</p>
-                            <p> Fixed Price Projects</p>
-                        </div>
-
-                        <div class="Xavor_inner">
-                            <h1>Products</h1>
-                            <p> xEngine</p>
-                            <p> Enterprise Data Portal</p>
-                            <h1>Partnership</h1>
-                            <p> Overview</p>
-                            <p> Lead Referral</p>
-                            <p> Channel</p>
-                            <p> Community</p>
-                            <h1>Emerging Technology</h1>
-                            <p> AI/ML</p>
-                            <p> IoT And Digital Engineering</p>
-                            <p> Robotics and Mechatronics</p>
-                            <p> AR/VR</p>
-                            <p> Health-Tech</p>
-                        </div>
-
-                        <div class="Xavor_inner">
-                            <h1>Solutions</h1>
-                            <p> Cloud Solutions</p>
-                            <p> Cloud Contact</p>
-                            <p> Integration</p>
-                            <p> Enterprise Solutions</p>
-                            <h1>Resources</h1>
-                            <p> Blogs</p>
-                            <p> Privacy Policy</p>
-                            <p> Case Studies</p>
-                            <h1>Company</h1>
-                            <p> About</p>
-                            <p> Life at Xavor</p>
-                            <p> Contact</p>
-                        </div>
-
-                    </div>
-                    <div class="Xavor_form">
-                        <h1>Join our mailing list</h1>
-                        <p>Subscribe to the newsletter for the daily dose of news, updates, tips and special offers</p>
-                        <form action="subscription_from" method="POST">
-                            <input type="text" name="subscription_name" id="subscription_name" placeholder="FULL NAME"
-                                autocomplete="off" required>
-                            <input type="mail" name="subscription_mail" id="subscription_mail" placeholder="YOUR GMAIL"
-                                autocomplete="off" required>
-                            <input type="submit" value="SUBMIT">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </section>
+    {{> footer }}
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
