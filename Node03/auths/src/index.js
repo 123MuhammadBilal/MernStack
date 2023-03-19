@@ -43,7 +43,7 @@ app.set("views", templates);
 //routing
 app.get("/", (req, res) => {
   //render always response the file
-  res.render("singup");
+  res.render("singin");
 });
 
 app.get("/subscribers", async (req, res) => {
