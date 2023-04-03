@@ -1,0 +1,148 @@
+/* CSS for responsive navigation */
+
+@media (max-width: 767px) {
+    .partner_lefter {
+        width: 90%;
+    }
+    .partner_righter {
+        width: 100%;
+    }
+    .images_partners {
+        max-width: 95%;
+    }
+    .image_controler_left {
+        width: 100%;
+    }
+    .image_controler_right {
+        width: 96%;
+    }
+    .tab_details {
+        padding: 22px;
+        margin: 5px 5px;
+        width: 85%;
+    }
+    .line_tab2 {
+        padding: 0px 0px;
+    }
+    .client_slider_inner_img {
+        width: 80%;
+    }
+    .client_slider_inner_details {
+        width: 95%;
+    }
+    .webinars_video {
+        margin: 10px 0px;
+        width: 80%;
+        padding: 0px 20px;
+    }
+    .team_images {
+        width: 100%;
+        margin: 15px 0px;
+    }
+    .team {
+        width: 93%;
+        padding: 5px 5px 5px 20px;
+    }
+    .inner_work {
+        margin: 30px 0px;
+        float: right;
+        width: 100%;
+    }
+    .help {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .touch_line {
+        margin: 12px auto !important;
+    }
+    .help_details {
+        width: 100%;
+    }
+    .touch_outer {
+    background-color: #d3d3d32e;
+    }
+    .help_details input {
+        width: 88%;
+    }
+    .help_details select {
+        width: 92%;
+    }
+    .help_details textarea {
+        width: 89%;
+    }
+    .Xavor_orporation {
+        width: 90%;
+        padding: 0px 20px;
+    }
+    .footer_container {
+        text-align: center !important;
+    }
+    .Xavor_inner {
+        float: left;
+        width: 93%;
+        padding: 13px;
+    }
+    .Xavor_mid {
+        width: 100%;
+    }
+    .Xavor_form {
+        width: 95%;
+        padding: 10px;
+    }
+    .banner_details {
+        padding: 20px;
+        width: 89%;
+        margin-top: 0px;
+    }
+    .banner_details p {
+        margin: 10px 0px;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    .banner_details h1 {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .line_tab {
+        width: 100%;
+    }
+    .line_tab2{
+        width: 100%;
+    }
+    .clients_slider {
+        padding: 32px 0px 32px 0px;
+    }
+    .header_pages {
+        float: left;
+        width: 100%;
+        height: 100vh;
+        position: sticky;
+        z-index: 9999;
+        padding: 20px 0px;
+        margin-top: -75px;
+        background: #000;
+        display: none;
+    }
+    .header_pages ul {
+        margin: 0 auto;
+        width: 45%;
+        padding: 10px 0px;
+    }
+    scrolled{
+        background-color: transparent !important;
+    }
+    .header_icon {
+        width: 22%;
+    }
+    section.navigation {
+        position: inherit;
+    }
+    .clients_container {
+        padding: 10px 20px;
+    }
+    .clients_container p {
+        padding: 10px 25px;
+    }
+}
+  
