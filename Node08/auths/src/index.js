@@ -34,12 +34,6 @@ app.set("view engine", "hbs");
 //set view custom
 app.set("views", templates);
 
-app.get('/',(req,res)=>{
-  res.render('home')
-})
-app.get('*',(req,res)=>{
-  res.render('404')
-})
 app.get('/authentication',(req,res)=>{
   res.render('authentication')
 })
@@ -52,12 +46,17 @@ app.get('/contact',(req,res)=>{
 app.get('/singin',(req,res)=>{
   res.render('singin')
 })
-
 app.get('/singup',(req,res)=>{
   res.render('singup')
 })
 app.get('/subscribers',(req,res)=>{
   res.render('subscribers')
+})
+app.get('/',(req,res)=>{
+  res.render('home')
+})
+app.get('*',(req,res)=>{
+  res.render('404')
 })
 
 // connect the database
@@ -69,8 +68,6 @@ mongoose.connect(url,{
 }).catch((error)=>{
   console.error(`${error} to connect ${url}`)
 })
-
-
 
 //run on port
 app.listen(port,()=>{

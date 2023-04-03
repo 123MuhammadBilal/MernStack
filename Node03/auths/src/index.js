@@ -1,9 +1,10 @@
-//adding bodyParser
+//adding bodyParser             for form submition
 const bodyParser = require("body-parser");
-//nodemailer for mailing
+//nodemailer for mailing        for mail
 const nodemailer = require("nodemailer");
-//mongoose for database
+//mongoose for database         for database
 const mongoose = require("mongoose");
+
 //path for set the static paths
 const path = require("path");
 //hbs is a view engine
